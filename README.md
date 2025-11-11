@@ -72,16 +72,21 @@ devtools::check()
 ```
 
 ## Testing
+```r
 devtools::test()
 
 install.packages("covr")
 covr::report()
+```
 
 ## Reproducibility
+```r
 install.packages("renv")
 renv::init()        # initializes project library
 renv::snapshot()    # updates renv.lock after changes
-
+```
 
 ## Docker
+```r
 docker build -t nightingale:dev .
+```
