@@ -53,8 +53,10 @@ devtools::install_github("jansim/nightingale@sessions/2-readme")
 library(nightingale)
 
 
+```
+## Development
 
-#Development
+```r
 # one-time
 install.packages(c("devtools", "roxygen2", "testthat", "lintr"))
 
@@ -67,19 +69,19 @@ devtools::install()
 
 # full checks (recommended before PRs)
 devtools::check()
+```
 
-
-#Testing
+## Testing
 devtools::test()
 
 install.packages("covr")
 covr::report()
 
-#Reproducibility
+## Reproducibility
 install.packages("renv")
 renv::init()        # initializes project library
 renv::snapshot()    # updates renv.lock after changes
 
 
-#Docker
+## Docker
 docker build -t nightingale:dev .
